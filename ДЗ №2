@@ -1,0 +1,58 @@
+ nt9_9/test_dir/pycharm-community-2020.2.3.exe
+[student10_3@manager ~]$ hdfs dfs -put /home/hduser/input.txt /student10_3 / hdu                             ser
+put: `/home/hduser/input.txt': No such file or directory
+put: `/student10_3': No such file or directory
+^[[A^[[A^[[A^[[A^[[Aput: /bin/chfn (Permission denied)                         p                             ut: /bin/chsh (Permission denied)
+
+put: /bin/locate (Permission denied)
+
+
+
+hdfs dfs -lsput: /bin/ssh-agent (Permission denied)
+put: /bin/sudo (Permission denied)
+put: /bin/sudoedit (Permission denied)
+put: /bin/sudoreplay (Permission denied)
+
+hdfs put: /boot/System.map-3.10.0-693.11.6.el7.x86_64 (Permission denied)
+put: cannot open directory file:/boot/grub2: Permission denied
+put: /boot/initramfs-0-rescue-609bbd29e32a4898e604f49bff82a88c.img (Permission denied)
+put: /boot/initramfs-3.10.0-693.11.6.el7.x86_64.img (Permission denied)
+put: /boot/initramfs-3.10.0-693.11.6.el7.x86_64kdump.img (Permission denied)
+put: /boot/initramfs-3.10.0-693.el7.x86_64.img (Permission denied)                                      put: /dev/autofs (Permission denied)
+-put: Pathname /user/student10_3/hduser/dev/block/11:0 from hdfs://manager.novalocal:8020/user/student10_3/hduser/dev/block/11:0 is not a valid DFS filename.
+Usage: hadoop fs [generic options] -put [-f] [-p] [-l] <localsrc> ... <dst>
+[student10_3@manager ~]$
+[student10_3@manager ~]$
+[student10_3@manager ~]$
+[student10_3@manager ~]$
+[student10_3@manager ~]$
+[student10_3@manager ~]$ hdfs dfs -ls
+Found 5 items
+drwx------   - student10_3 student10_3          0 2020-12-20 17:38 .Trash
+-rw-r--r--   3 student10_3 student10_3          0 2020-12-20 17:37 gdskgfdksg
+drwxr-xr-x   - student10_3 student10_3          0 2020-12-20 17:23 hadoop
+drwxr-xr-x   - student10_3 student10_3          0 2020-12-20 17:55 hduser
+drwxr-xr-x   - student10_3 student10_3          0 2020-12-20 17:23 student10_3
+[student10_3@manager ~]$ hdfs dfs -cat hduser
+cat: `hduser': Is a directory
+[student10_3@manager ~]$ hdfs dfs -cat hduser лдадвр вшоавд шва
+cat: `hduser': Is a directory
+cat: `лдадвр': No such file or directory
+cat: `вшоавд': No such file or directory
+cat: `шва': No such file or directory
+[student10_3@manager ~]$ hdfs dfs -cat input.txt вплдтдам твдтдв
+cat: `input.txt': No such file or directory
+cat: `вплдтдам': No such file or directory
+cat: `твдтдв': No such file or directory
+[student10_3@manager ~]$ hdfs dfs -lы
+-lы: Unknown command
+[student10_3@manager ~]$ hdfs dfs -ls
+Found 5 items
+drwx------   - student10_3 student10_3          0 2020-12-20 17:38 .Trash
+-rw-r--r--   3 student10_3 student10_3          0 2020-12-20 17:37 gdskgfdksg
+drwxr-xr-x   - student10_3 student10_3          0 2020-12-20 17:23 hadoop
+drwxr-xr-x   - student10_3 student10_3          0 2020-12-20 17:55 hduser
+drwxr-xr-x   - student10_3 student10_3          0 2020-12-20 17:23 student10_3
+[student10_3@manager ~]$ hdfs dfs -get input.txt/ home/ hduser
+get: `hduser': No such file or directory
+[student10_3@manager ~]$ hdfs dfs -get input.txt/ home/ hduser
