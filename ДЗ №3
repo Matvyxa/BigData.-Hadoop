@@ -1,0 +1,620 @@
+[student10_3@node4 ~]$ YARN_EXAMPLES=/opt/cloudera/parcels/CDH-5.16.2-1.cdh5.16.2.p0.8/lib/hadoop-mapreduce/
+[student10_3@node4 ~]$ yarn jar $YARN_EXAMPLES/hadoop-mapreduce-examples.jar pi 16 1000000
+Number of Maps  = 16
+Samples per Map = 1000000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Wrote input for Map #10
+Wrote input for Map #11
+Wrote input for Map #12
+Wrote input for Map #13
+Wrote input for Map #14
+Wrote input for Map #15
+Starting Job
+20/12/24 16:15:31 INFO Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+20/12/24 16:15:31 INFO jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+20/12/24 16:15:31 INFO input.FileInputFormat: Total input paths to process : 16
+20/12/24 16:15:31 INFO mapreduce.JobSubmitter: number of splits:16
+20/12/24 16:15:31 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local533673329_0001
+20/12/24 16:15:31 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+20/12/24 16:15:31 INFO mapreduce.Job: Running job: job_local533673329_0001
+20/12/24 16:15:31 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+20/12/24 16:15:31 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+20/12/24 16:15:31 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cl                eanup failures: false
+20/12/24 16:15:31 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+20/12/24 16:15:31 INFO mapred.LocalJobRunner: Waiting for map tasks
+20/12/24 16:15:31 INFO mapred.LocalJobRunner: Starting task: attempt_local533673329_0001_m_000000_0
+20/12/24 16:15:32 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+20/12/24 16:15:32 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cl                eanup failures: false
+20/12/24 16:15:32 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+20/12/24 16:15:32 INFO mapred.MapTask: Processing split: hdfs://manager.novalocal:8020/user/student10_3/QuasiMonteCarlo_1608826528671_14120117                18/in/part0:0+118
+20/12/24 16:15:32 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+20/12/24 16:15:32 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+20/12/24 16:15:32 INFO mapred.MapTask: soft limit at 83886080
+20/12/24 16:15:32 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+20/12/24 16:15:32 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+20/12/24 16:15:32 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+20/12/24 16:15:32 INFO mapred.LocalJobRunner:
+20/12/24 16:15:32 INFO mapred.MapTask: Starting flush of map output
+20/12/24 16:15:32 INFO mapred.MapTask: Spilling map output
+20/12/24 16:15:32 INFO mapred.MapTask: bufstart = 0; bufend = 18; bufvoid = 104857600
+20/12/24 16:15:32 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+20/12/24 16:15:32 INFO mapred.MapTask: Finished spill 0
+20/12/24 16:15:32 INFO mapred.Task: Task:attempt_local533673329_0001_m_000000_0 is done. And is in the process of committing
+20/12/24 16:15:32 INFO mapred.LocalJobRunner: Generated 1000000 samples.
+20/12/24 16:15:32 INFO mapred.Task: Task 'attempt_local533673329_0001_m_000000_0' done.
+20/12/24 16:15:32 INFO mapred.LocalJobRunner: Finishing task: attempt_local533673329_0001_m_000000_0
+20/12/24 16:15:32 INFO mapred.LocalJobRunner: Starting task: attempt_local533673329_0001_m_000001_0
+20/12/24 16:15:32 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+20/12/24 16:15:32 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cl                eanup failures: false
+20/12/24 16:15:32 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+20/12/24 16:15:32 INFO mapred.MapTask: Processing split: hdfs://manager.novalocal:8020/user/student10_3/QuasiMonteCarlo_1608826528671_14120117                18/in/part1:0+118
+20/12/24 16:15:32 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+20/12/24 16:15:32 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+20/12/24 16:15:32 INFO mapred.MapTask: soft limit at 83886080
+20/12/24 16:15:32 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+20/12/24 16:15:32 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+20/12/24 16:15:32 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+20/12/24 16:15:32 INFO mapred.LocalJobRunner:
+20/12/24 16:15:32 INFO mapred.MapTask: Starting flush of map output
+20/12/24 16:15:32 INFO mapred.MapTask: Spilling map output
+20/12/24 16:15:32 INFO mapred.MapTask: bufstart = 0; bufend = 18; bufvoid = 104857600
+20/12/24 16:15:32 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+20/12/24 16:15:32 INFO mapred.MapTask: Finished spill 0
+20/12/24 16:15:32 INFO mapred.Task: Task:attempt_local533673329_0001_m_000001_0 is done. And is in the process of committing
+20/12/24 16:15:32 INFO mapred.LocalJobRunner: Generated 1000000 samples.
+20/12/24 16:15:32 INFO mapred.Task: Task 'attempt_local533673329_0001_m_000001_0' done.
+20/12/24 16:15:32 INFO mapred.LocalJobRunner: Finishing task: attempt_local533673329_0001_m_000001_0
+20/12/24 16:15:32 INFO mapred.LocalJobRunner: Starting task: attempt_local533673329_0001_m_000002_0
+20/12/24 16:15:32 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+20/12/24 16:15:32 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cl                eanup failures: false
+20/12/24 16:15:32 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+20/12/24 16:15:32 INFO mapred.MapTask: Processing split: hdfs://manager.novalocal:8020/user/student10_3/QuasiMonteCarlo_1608826528671_14120117                18/in/part10:0+118
+20/12/24 16:15:32 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+20/12/24 16:15:32 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+20/12/24 16:15:32 INFO mapred.MapTask: soft limit at 83886080
+20/12/24 16:15:32 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+20/12/24 16:15:32 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+20/12/24 16:15:32 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+20/12/24 16:15:32 INFO mapred.LocalJobRunner:
+20/12/24 16:15:32 INFO mapred.MapTask: Starting flush of map output
+20/12/24 16:15:32 INFO mapred.MapTask: Spilling map output
+20/12/24 16:15:32 INFO mapred.MapTask: bufstart = 0; bufend = 18; bufvoid = 104857600
+20/12/24 16:15:32 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+20/12/24 16:15:32 INFO mapred.MapTask: Finished spill 0
+20/12/24 16:15:32 INFO mapred.Task: Task:attempt_local533673329_0001_m_000002_0 is done. And is in the process of committing
+20/12/24 16:15:32 INFO mapred.LocalJobRunner: Generated 1000000 samples.
+20/12/24 16:15:32 INFO mapred.Task: Task 'attempt_local533673329_0001_m_000002_0' done.
+20/12/24 16:15:32 INFO mapred.LocalJobRunner: Finishing task: attempt_local533673329_0001_m_000002_0
+20/12/24 16:15:32 INFO mapred.LocalJobRunner: Starting task: attempt_local533673329_0001_m_000003_0
+20/12/24 16:15:32 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+20/12/24 16:15:32 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cl                eanup failures: false
+20/12/24 16:15:32 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+20/12/24 16:15:32 INFO mapred.MapTask: Processing split: hdfs://manager.novalocal:8020/user/student10_3/QuasiMonteCarlo_1608826528671_14120117                18/in/part11:0+118
+20/12/24 16:15:32 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+20/12/24 16:15:32 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+20/12/24 16:15:32 INFO mapred.MapTask: soft limit at 83886080
+20/12/24 16:15:32 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+20/12/24 16:15:32 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+20/12/24 16:15:32 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+20/12/24 16:15:32 INFO mapred.LocalJobRunner:
+20/12/24 16:15:32 INFO mapred.MapTask: Starting flush of map output
+20/12/24 16:15:32 INFO mapred.MapTask: Spilling map output
+20/12/24 16:15:32 INFO mapred.MapTask: bufstart = 0; bufend = 18; bufvoid = 104857600
+20/12/24 16:15:32 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+20/12/24 16:15:32 INFO mapred.MapTask: Finished spill 0
+20/12/24 16:15:32 INFO mapred.Task: Task:attempt_local533673329_0001_m_000003_0 is done. And is in the process of committing
+20/12/24 16:15:32 INFO mapred.LocalJobRunner: Generated 1000000 samples.
+20/12/24 16:15:32 INFO mapred.Task: Task 'attempt_local533673329_0001_m_000003_0' done.
+20/12/24 16:15:32 INFO mapred.LocalJobRunner: Finishing task: attempt_local533673329_0001_m_000003_0
+20/12/24 16:15:32 INFO mapred.LocalJobRunner: Starting task: attempt_local533673329_0001_m_000004_0
+20/12/24 16:15:32 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+20/12/24 16:15:32 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cl                eanup failures: false
+20/12/24 16:15:32 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+20/12/24 16:15:32 INFO mapred.MapTask: Processing split: hdfs://manager.novalocal:8020/user/student10_3/QuasiMonteCarlo_1608826528671_14120117                18/in/part12:0+118
+20/12/24 16:15:32 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+20/12/24 16:15:32 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+20/12/24 16:15:32 INFO mapred.MapTask: soft limit at 83886080
+20/12/24 16:15:32 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+20/12/24 16:15:32 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+20/12/24 16:15:32 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+20/12/24 16:15:32 INFO mapred.LocalJobRunner:
+20/12/24 16:15:32 INFO mapred.MapTask: Starting flush of map output
+20/12/24 16:15:32 INFO mapred.MapTask: Spilling map output
+20/12/24 16:15:32 INFO mapred.MapTask: bufstart = 0; bufend = 18; bufvoid = 104857600
+20/12/24 16:15:32 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+20/12/24 16:15:32 INFO mapred.MapTask: Finished spill 0
+20/12/24 16:15:32 INFO mapred.Task: Task:attempt_local533673329_0001_m_000004_0 is done. And is in the process of committing
+20/12/24 16:15:32 INFO mapred.LocalJobRunner: Generated 1000000 samples.
+20/12/24 16:15:32 INFO mapred.Task: Task 'attempt_local533673329_0001_m_000004_0' done.
+20/12/24 16:15:32 INFO mapred.LocalJobRunner: Finishing task: attempt_local533673329_0001_m_000004_0
+20/12/24 16:15:32 INFO mapred.LocalJobRunner: Starting task: attempt_local533673329_0001_m_000005_0
+20/12/24 16:15:32 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+20/12/24 16:15:32 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cl                eanup failures: false
+20/12/24 16:15:32 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+20/12/24 16:15:32 INFO mapred.MapTask: Processing split: hdfs://manager.novalocal:8020/user/student10_3/QuasiMonteCarlo_1608826528671_14120117                18/in/part13:0+118
+20/12/24 16:15:32 INFO mapreduce.Job: Job job_local533673329_0001 running in uber mode : false
+20/12/24 16:15:32 INFO mapreduce.Job:  map 100% reduce 0%
+20/12/24 16:15:33 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+20/12/24 16:15:33 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+20/12/24 16:15:33 INFO mapred.MapTask: soft limit at 83886080
+20/12/24 16:15:33 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+20/12/24 16:15:33 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+20/12/24 16:15:33 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+20/12/24 16:15:33 INFO mapred.LocalJobRunner:
+20/12/24 16:15:33 INFO mapred.MapTask: Starting flush of map output
+20/12/24 16:15:33 INFO mapred.MapTask: Spilling map output
+20/12/24 16:15:33 INFO mapred.MapTask: bufstart = 0; bufend = 18; bufvoid = 104857600
+20/12/24 16:15:33 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+20/12/24 16:15:33 INFO mapred.MapTask: Finished spill 0
+20/12/24 16:15:33 INFO mapred.Task: Task:attempt_local533673329_0001_m_000005_0 is done. And is in the process of committing
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Generated 1000000 samples.
+20/12/24 16:15:33 INFO mapred.Task: Task 'attempt_local533673329_0001_m_000005_0' done.
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Finishing task: attempt_local533673329_0001_m_000005_0
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Starting task: attempt_local533673329_0001_m_000006_0
+20/12/24 16:15:33 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+20/12/24 16:15:33 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cl                eanup failures: false
+20/12/24 16:15:33 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+20/12/24 16:15:33 INFO mapred.MapTask: Processing split: hdfs://manager.novalocal:8020/user/student10_3/QuasiMonteCarlo_1608826528671_14120117                18/in/part14:0+118
+20/12/24 16:15:33 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+20/12/24 16:15:33 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+20/12/24 16:15:33 INFO mapred.MapTask: soft limit at 83886080
+20/12/24 16:15:33 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+20/12/24 16:15:33 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+20/12/24 16:15:33 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+20/12/24 16:15:33 INFO mapred.LocalJobRunner:
+20/12/24 16:15:33 INFO mapred.MapTask: Starting flush of map output
+20/12/24 16:15:33 INFO mapred.MapTask: Spilling map output
+20/12/24 16:15:33 INFO mapred.MapTask: bufstart = 0; bufend = 18; bufvoid = 104857600
+20/12/24 16:15:33 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+20/12/24 16:15:33 INFO mapred.MapTask: Finished spill 0
+20/12/24 16:15:33 INFO mapred.Task: Task:attempt_local533673329_0001_m_000006_0 is done. And is in the process of committing
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Generated 1000000 samples.
+20/12/24 16:15:33 INFO mapred.Task: Task 'attempt_local533673329_0001_m_000006_0' done.
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Finishing task: attempt_local533673329_0001_m_000006_0
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Starting task: attempt_local533673329_0001_m_000007_0
+20/12/24 16:15:33 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+20/12/24 16:15:33 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cl                eanup failures: false
+20/12/24 16:15:33 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+20/12/24 16:15:33 INFO mapred.MapTask: Processing split: hdfs://manager.novalocal:8020/user/student10_3/QuasiMonteCarlo_1608826528671_14120117                18/in/part15:0+118
+20/12/24 16:15:33 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+20/12/24 16:15:33 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+20/12/24 16:15:33 INFO mapred.MapTask: soft limit at 83886080
+20/12/24 16:15:33 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+20/12/24 16:15:33 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+20/12/24 16:15:33 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+20/12/24 16:15:33 INFO mapred.LocalJobRunner:
+20/12/24 16:15:33 INFO mapred.MapTask: Starting flush of map output
+20/12/24 16:15:33 INFO mapred.MapTask: Spilling map output
+20/12/24 16:15:33 INFO mapred.MapTask: bufstart = 0; bufend = 18; bufvoid = 104857600
+20/12/24 16:15:33 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+20/12/24 16:15:33 INFO mapred.MapTask: Finished spill 0
+20/12/24 16:15:33 INFO mapred.Task: Task:attempt_local533673329_0001_m_000007_0 is done. And is in the process of committing
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Generated 1000000 samples.
+20/12/24 16:15:33 INFO mapred.Task: Task 'attempt_local533673329_0001_m_000007_0' done.
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Finishing task: attempt_local533673329_0001_m_000007_0
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Starting task: attempt_local533673329_0001_m_000008_0
+20/12/24 16:15:33 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+20/12/24 16:15:33 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cl                eanup failures: false
+20/12/24 16:15:33 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+20/12/24 16:15:33 INFO mapred.MapTask: Processing split: hdfs://manager.novalocal:8020/user/student10_3/QuasiMonteCarlo_1608826528671_14120117                18/in/part2:0+118
+20/12/24 16:15:33 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+20/12/24 16:15:33 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+20/12/24 16:15:33 INFO mapred.MapTask: soft limit at 83886080
+20/12/24 16:15:33 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+20/12/24 16:15:33 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+20/12/24 16:15:33 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+20/12/24 16:15:33 INFO mapred.LocalJobRunner:
+20/12/24 16:15:33 INFO mapred.MapTask: Starting flush of map output
+20/12/24 16:15:33 INFO mapred.MapTask: Spilling map output
+20/12/24 16:15:33 INFO mapred.MapTask: bufstart = 0; bufend = 18; bufvoid = 104857600
+20/12/24 16:15:33 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+20/12/24 16:15:33 INFO mapred.MapTask: Finished spill 0
+20/12/24 16:15:33 INFO mapred.Task: Task:attempt_local533673329_0001_m_000008_0 is done. And is in the process of committing
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Generated 1000000 samples.
+20/12/24 16:15:33 INFO mapred.Task: Task 'attempt_local533673329_0001_m_000008_0' done.
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Finishing task: attempt_local533673329_0001_m_000008_0
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Starting task: attempt_local533673329_0001_m_000009_0
+20/12/24 16:15:33 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+20/12/24 16:15:33 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cl                eanup failures: false
+20/12/24 16:15:33 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+20/12/24 16:15:33 INFO mapred.MapTask: Processing split: hdfs://manager.novalocal:8020/user/student10_3/QuasiMonteCarlo_1608826528671_14120117                18/in/part3:0+118
+20/12/24 16:15:33 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+20/12/24 16:15:33 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+20/12/24 16:15:33 INFO mapred.MapTask: soft limit at 83886080
+20/12/24 16:15:33 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+20/12/24 16:15:33 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+20/12/24 16:15:33 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+20/12/24 16:15:33 INFO mapred.LocalJobRunner:
+20/12/24 16:15:33 INFO mapred.MapTask: Starting flush of map output
+20/12/24 16:15:33 INFO mapred.MapTask: Spilling map output
+20/12/24 16:15:33 INFO mapred.MapTask: bufstart = 0; bufend = 18; bufvoid = 104857600
+20/12/24 16:15:33 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+20/12/24 16:15:33 INFO mapred.MapTask: Finished spill 0
+20/12/24 16:15:33 INFO mapred.Task: Task:attempt_local533673329_0001_m_000009_0 is done. And is in the process of committing
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Generated 1000000 samples.
+20/12/24 16:15:33 INFO mapred.Task: Task 'attempt_local533673329_0001_m_000009_0' done.
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Finishing task: attempt_local533673329_0001_m_000009_0
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Starting task: attempt_local533673329_0001_m_000010_0
+20/12/24 16:15:33 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+20/12/24 16:15:33 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cl                eanup failures: false
+20/12/24 16:15:33 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+20/12/24 16:15:33 INFO mapred.MapTask: Processing split: hdfs://manager.novalocal:8020/user/student10_3/QuasiMonteCarlo_1608826528671_14120117                18/in/part4:0+118
+20/12/24 16:15:33 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+20/12/24 16:15:33 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+20/12/24 16:15:33 INFO mapred.MapTask: soft limit at 83886080
+20/12/24 16:15:33 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+20/12/24 16:15:33 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+20/12/24 16:15:33 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+20/12/24 16:15:33 INFO mapred.LocalJobRunner:
+20/12/24 16:15:33 INFO mapred.MapTask: Starting flush of map output
+20/12/24 16:15:33 INFO mapred.MapTask: Spilling map output
+20/12/24 16:15:33 INFO mapred.MapTask: bufstart = 0; bufend = 18; bufvoid = 104857600
+20/12/24 16:15:33 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+20/12/24 16:15:33 INFO mapred.MapTask: Finished spill 0
+20/12/24 16:15:33 INFO mapred.Task: Task:attempt_local533673329_0001_m_000010_0 is done. And is in the process of committing
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Generated 1000000 samples.
+20/12/24 16:15:33 INFO mapred.Task: Task 'attempt_local533673329_0001_m_000010_0' done.
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Finishing task: attempt_local533673329_0001_m_000010_0
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Starting task: attempt_local533673329_0001_m_000011_0
+20/12/24 16:15:33 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+20/12/24 16:15:33 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cl                eanup failures: false
+20/12/24 16:15:33 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+20/12/24 16:15:33 INFO mapred.MapTask: Processing split: hdfs://manager.novalocal:8020/user/student10_3/QuasiMonteCarlo_1608826528671_14120117                18/in/part5:0+118
+20/12/24 16:15:33 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+20/12/24 16:15:33 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+20/12/24 16:15:33 INFO mapred.MapTask: soft limit at 83886080
+20/12/24 16:15:33 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+20/12/24 16:15:33 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+20/12/24 16:15:33 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+20/12/24 16:15:33 INFO mapred.LocalJobRunner:
+20/12/24 16:15:33 INFO mapred.MapTask: Starting flush of map output
+20/12/24 16:15:33 INFO mapred.MapTask: Spilling map output
+20/12/24 16:15:33 INFO mapred.MapTask: bufstart = 0; bufend = 18; bufvoid = 104857600
+20/12/24 16:15:33 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+20/12/24 16:15:33 INFO mapred.MapTask: Finished spill 0
+20/12/24 16:15:33 INFO mapred.Task: Task:attempt_local533673329_0001_m_000011_0 is done. And is in the process of committing
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Generated 1000000 samples.
+20/12/24 16:15:33 INFO mapred.Task: Task 'attempt_local533673329_0001_m_000011_0' done.
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Finishing task: attempt_local533673329_0001_m_000011_0
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Starting task: attempt_local533673329_0001_m_000012_0
+20/12/24 16:15:33 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+20/12/24 16:15:33 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cl                eanup failures: false
+20/12/24 16:15:33 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+20/12/24 16:15:33 INFO mapred.MapTask: Processing split: hdfs://manager.novalocal:8020/user/student10_3/QuasiMonteCarlo_1608826528671_14120117                18/in/part6:0+118
+20/12/24 16:15:33 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+20/12/24 16:15:33 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+20/12/24 16:15:33 INFO mapred.MapTask: soft limit at 83886080
+20/12/24 16:15:33 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+20/12/24 16:15:33 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+20/12/24 16:15:33 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+20/12/24 16:15:33 INFO mapred.LocalJobRunner:
+20/12/24 16:15:33 INFO mapred.MapTask: Starting flush of map output
+20/12/24 16:15:33 INFO mapred.MapTask: Spilling map output
+20/12/24 16:15:33 INFO mapred.MapTask: bufstart = 0; bufend = 18; bufvoid = 104857600
+20/12/24 16:15:33 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+20/12/24 16:15:33 INFO mapred.MapTask: Finished spill 0
+20/12/24 16:15:33 INFO mapred.Task: Task:attempt_local533673329_0001_m_000012_0 is done. And is in the process of committing
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Generated 1000000 samples.
+20/12/24 16:15:33 INFO mapred.Task: Task 'attempt_local533673329_0001_m_000012_0' done.
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Finishing task: attempt_local533673329_0001_m_000012_0
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Starting task: attempt_local533673329_0001_m_000013_0
+20/12/24 16:15:33 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+20/12/24 16:15:33 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cl                eanup failures: false
+20/12/24 16:15:33 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+20/12/24 16:15:33 INFO mapred.MapTask: Processing split: hdfs://manager.novalocal:8020/user/student10_3/QuasiMonteCarlo_1608826528671_14120117                18/in/part7:0+118
+20/12/24 16:15:33 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+20/12/24 16:15:33 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+20/12/24 16:15:33 INFO mapred.MapTask: soft limit at 83886080
+20/12/24 16:15:33 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+20/12/24 16:15:33 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+20/12/24 16:15:33 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+20/12/24 16:15:33 INFO mapred.LocalJobRunner:
+20/12/24 16:15:33 INFO mapred.MapTask: Starting flush of map output
+20/12/24 16:15:33 INFO mapred.MapTask: Spilling map output
+20/12/24 16:15:33 INFO mapred.MapTask: bufstart = 0; bufend = 18; bufvoid = 104857600
+20/12/24 16:15:33 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+20/12/24 16:15:33 INFO mapred.MapTask: Finished spill 0
+20/12/24 16:15:33 INFO mapred.Task: Task:attempt_local533673329_0001_m_000013_0 is done. And is in the process of committing
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Generated 1000000 samples.
+20/12/24 16:15:33 INFO mapred.Task: Task 'attempt_local533673329_0001_m_000013_0' done.
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Finishing task: attempt_local533673329_0001_m_000013_0
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Starting task: attempt_local533673329_0001_m_000014_0
+20/12/24 16:15:33 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+20/12/24 16:15:33 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cl                eanup failures: false
+20/12/24 16:15:33 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+20/12/24 16:15:33 INFO mapred.MapTask: Processing split: hdfs://manager.novalocal:8020/user/student10_3/QuasiMonteCarlo_1608826528671_14120117                18/in/part8:0+118
+20/12/24 16:15:33 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+20/12/24 16:15:33 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+20/12/24 16:15:33 INFO mapred.MapTask: soft limit at 83886080
+20/12/24 16:15:33 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+20/12/24 16:15:33 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+20/12/24 16:15:33 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+20/12/24 16:15:33 INFO mapred.LocalJobRunner:
+20/12/24 16:15:33 INFO mapred.MapTask: Starting flush of map output
+20/12/24 16:15:33 INFO mapred.MapTask: Spilling map output
+20/12/24 16:15:33 INFO mapred.MapTask: bufstart = 0; bufend = 18; bufvoid = 104857600
+20/12/24 16:15:33 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+20/12/24 16:15:33 INFO mapred.MapTask: Finished spill 0
+20/12/24 16:15:33 INFO mapred.Task: Task:attempt_local533673329_0001_m_000014_0 is done. And is in the process of committing
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Generated 1000000 samples.
+20/12/24 16:15:33 INFO mapred.Task: Task 'attempt_local533673329_0001_m_000014_0' done.
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Finishing task: attempt_local533673329_0001_m_000014_0
+20/12/24 16:15:33 INFO mapred.LocalJobRunner: Starting task: attempt_local533673329_0001_m_000015_0
+20/12/24 16:15:33 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+20/12/24 16:15:33 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cl                eanup failures: false
+20/12/24 16:15:33 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+20/12/24 16:15:33 INFO mapred.MapTask: Processing split: hdfs://manager.novalocal:8020/user/student10_3/QuasiMonteCarlo_1608826528671_14120117                18/in/part9:0+118
+20/12/24 16:15:34 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+20/12/24 16:15:34 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+20/12/24 16:15:34 INFO mapred.MapTask: soft limit at 83886080
+20/12/24 16:15:34 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+20/12/24 16:15:34 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+20/12/24 16:15:34 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+20/12/24 16:15:34 INFO mapred.LocalJobRunner:
+20/12/24 16:15:34 INFO mapred.MapTask: Starting flush of map output
+20/12/24 16:15:34 INFO mapred.MapTask: Spilling map output
+20/12/24 16:15:34 INFO mapred.MapTask: bufstart = 0; bufend = 18; bufvoid = 104857600
+20/12/24 16:15:34 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+20/12/24 16:15:34 INFO mapred.MapTask: Finished spill 0
+20/12/24 16:15:34 INFO mapred.Task: Task:attempt_local533673329_0001_m_000015_0 is done. And is in the process of committing
+20/12/24 16:15:34 INFO mapred.LocalJobRunner: Generated 1000000 samples.
+20/12/24 16:15:34 INFO mapred.Task: Task 'attempt_local533673329_0001_m_000015_0' done.
+20/12/24 16:15:34 INFO mapred.LocalJobRunner: Finishing task: attempt_local533673329_0001_m_000015_0
+20/12/24 16:15:34 INFO mapred.LocalJobRunner: map task executor complete.
+20/12/24 16:15:34 INFO mapred.LocalJobRunner: Waiting for reduce tasks
+20/12/24 16:15:34 INFO mapred.LocalJobRunner: Starting task: attempt_local533673329_0001_r_000000_0
+20/12/24 16:15:34 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+20/12/24 16:15:34 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cl                eanup failures: false
+20/12/24 16:15:34 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+20/12/24 16:15:34 INFO mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@3de80a0b
+20/12/24 16:15:34 INFO reduce.MergeManagerImpl: MergerManager: memoryLimit=652528832, maxSingleShuffleLimit=163132208, mergeThreshold=43066905                6, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+20/12/24 16:15:34 INFO reduce.EventFetcher: attempt_local533673329_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Ev                ents
+20/12/24 16:15:34 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local533673329_0001_m_000011_0 decomp: 24 le                n: 28 to MEMORY
+20/12/24 16:15:34 INFO reduce.InMemoryMapOutput: Read 24 bytes from map-output for attempt_local533673329_0001_m_000011_0
+20/12/24 16:15:34 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 24, inMemoryMapOutputs.size() -> 1, commitMemory -> 0                , usedMemory ->24
+20/12/24 16:15:34 WARN io.ReadaheadPool: Failed readahead on ifile
+EBADF: Bad file descriptor
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posix_fadvise(Native Method)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posixFadviseIfPossible(NativeIO.java:267)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX$CacheManipulator.posixFadviseIfPossible(NativeIO.java:146)
+        at org.apache.hadoop.io.ReadaheadPool$ReadaheadRequestImpl.run(ReadaheadPool.java:206)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+20/12/24 16:15:34 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local533673329_0001_m_000004_0 decomp: 24 le                n: 28 to MEMORY
+20/12/24 16:15:34 INFO reduce.InMemoryMapOutput: Read 24 bytes from map-output for attempt_local533673329_0001_m_000004_0
+20/12/24 16:15:34 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 24, inMemoryMapOutputs.size() -> 2, commitMemory -> 2                4, usedMemory ->48
+20/12/24 16:15:34 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local533673329_0001_m_000005_0 decomp: 24 le                n: 28 to MEMORY
+20/12/24 16:15:34 INFO reduce.InMemoryMapOutput: Read 24 bytes from map-output for attempt_local533673329_0001_m_000005_0
+20/12/24 16:15:34 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 24, inMemoryMapOutputs.size() -> 3, commitMemory -> 4                8, usedMemory ->72
+20/12/24 16:15:34 WARN io.ReadaheadPool: Failed readahead on ifile
+EBADF: Bad file descriptor
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posix_fadvise(Native Method)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posixFadviseIfPossible(NativeIO.java:267)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX$CacheManipulator.posixFadviseIfPossible(NativeIO.java:146)
+        at org.apache.hadoop.io.ReadaheadPool$ReadaheadRequestImpl.run(ReadaheadPool.java:206)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+20/12/24 16:15:34 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local533673329_0001_m_000006_0 decomp: 24 le                n: 28 to MEMORY
+20/12/24 16:15:34 WARN io.ReadaheadPool: Failed readahead on ifile
+EBADF: Bad file descriptor
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posix_fadvise(Native Method)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posixFadviseIfPossible(NativeIO.java:267)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX$CacheManipulator.posixFadviseIfPossible(NativeIO.java:146)
+        at org.apache.hadoop.io.ReadaheadPool$ReadaheadRequestImpl.run(ReadaheadPool.java:206)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+20/12/24 16:15:34 INFO reduce.InMemoryMapOutput: Read 24 bytes from map-output for attempt_local533673329_0001_m_000006_0
+20/12/24 16:15:34 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 24, inMemoryMapOutputs.size() -> 4, commitMemory -> 7                2, usedMemory ->96
+20/12/24 16:15:34 WARN io.ReadaheadPool: Failed readahead on ifile
+EBADF: Bad file descriptor
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posix_fadvise(Native Method)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posixFadviseIfPossible(NativeIO.java:267)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX$CacheManipulator.posixFadviseIfPossible(NativeIO.java:146)
+        at org.apache.hadoop.io.ReadaheadPool$ReadaheadRequestImpl.run(ReadaheadPool.java:206)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+20/12/24 16:15:34 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local533673329_0001_m_000012_0 decomp: 24 le                n: 28 to MEMORY
+20/12/24 16:15:34 INFO reduce.InMemoryMapOutput: Read 24 bytes from map-output for attempt_local533673329_0001_m_000012_0
+20/12/24 16:15:34 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 24, inMemoryMapOutputs.size() -> 5, commitMemory -> 9                6, usedMemory ->120
+20/12/24 16:15:34 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local533673329_0001_m_000007_0 decomp: 24 le                n: 28 to MEMORY
+20/12/24 16:15:34 INFO reduce.InMemoryMapOutput: Read 24 bytes from map-output for attempt_local533673329_0001_m_000007_0
+20/12/24 16:15:34 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 24, inMemoryMapOutputs.size() -> 6, commitMemory -> 1                20, usedMemory ->144
+20/12/24 16:15:34 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local533673329_0001_m_000013_0 decomp: 24 le                n: 28 to MEMORY
+20/12/24 16:15:34 INFO reduce.InMemoryMapOutput: Read 24 bytes from map-output for attempt_local533673329_0001_m_000013_0
+20/12/24 16:15:34 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 24, inMemoryMapOutputs.size() -> 7, commitMemory -> 1                44, usedMemory ->168
+20/12/24 16:15:34 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local533673329_0001_m_000000_0 decomp: 24 le                n: 28 to MEMORY
+20/12/24 16:15:34 INFO reduce.InMemoryMapOutput: Read 24 bytes from map-output for attempt_local533673329_0001_m_000000_0
+20/12/24 16:15:34 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 24, inMemoryMapOutputs.size() -> 8, commitMemory -> 1                68, usedMemory ->192
+20/12/24 16:15:34 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local533673329_0001_m_000014_0 decomp: 24 le                n: 28 to MEMORY
+20/12/24 16:15:34 INFO reduce.InMemoryMapOutput: Read 24 bytes from map-output for attempt_local533673329_0001_m_000014_0
+20/12/24 16:15:34 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 24, inMemoryMapOutputs.size() -> 9, commitMemory -> 1                92, usedMemory ->216
+20/12/24 16:15:34 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local533673329_0001_m_000001_0 decomp: 24 le                n: 28 to MEMORY
+20/12/24 16:15:34 INFO reduce.InMemoryMapOutput: Read 24 bytes from map-output for attempt_local533673329_0001_m_000001_0
+20/12/24 16:15:34 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 24, inMemoryMapOutputs.size() -> 10, commitMemory ->                 216, usedMemory ->240
+20/12/24 16:15:34 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local533673329_0001_m_000015_0 decomp: 24 le                n: 28 to MEMORY
+20/12/24 16:15:34 INFO reduce.InMemoryMapOutput: Read 24 bytes from map-output for attempt_local533673329_0001_m_000015_0
+20/12/24 16:15:34 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 24, inMemoryMapOutputs.size() -> 11, commitMemory ->                 240, usedMemory ->264
+20/12/24 16:15:34 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local533673329_0001_m_000002_0 decomp: 24 le                n: 28 to MEMORY
+20/12/24 16:15:34 INFO reduce.InMemoryMapOutput: Read 24 bytes from map-output for attempt_local533673329_0001_m_000002_0
+20/12/24 16:15:34 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 24, inMemoryMapOutputs.size() -> 12, commitMemory ->                 264, usedMemory ->288
+20/12/24 16:15:34 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local533673329_0001_m_000008_0 decomp: 24 le                n: 28 to MEMORY
+20/12/24 16:15:34 INFO reduce.InMemoryMapOutput: Read 24 bytes from map-output for attempt_local533673329_0001_m_000008_0
+20/12/24 16:15:34 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 24, inMemoryMapOutputs.size() -> 13, commitMemory ->                 288, usedMemory ->312
+20/12/24 16:15:34 WARN io.ReadaheadPool: Failed readahead on ifile
+EBADF: Bad file descriptor
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posix_fadvise(Native Method)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posixFadviseIfPossible(NativeIO.java:267)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX$CacheManipulator.posixFadviseIfPossible(NativeIO.java:146)
+        at org.apache.hadoop.io.ReadaheadPool$ReadaheadRequestImpl.run(ReadaheadPool.java:206)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+20/12/24 16:15:34 WARN io.ReadaheadPool: Failed readahead on ifile
+EBADF: Bad file descriptor
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posix_fadvise(Native Method)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posixFadviseIfPossible(NativeIO.java:267)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX$CacheManipulator.posixFadviseIfPossible(NativeIO.java:146)
+        at org.apache.hadoop.io.ReadaheadPool$ReadaheadRequestImpl.run(ReadaheadPool.java:206)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+20/12/24 16:15:34 WARN io.ReadaheadPool: Failed readahead on ifile
+EBADF: Bad file descriptor
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posix_fadvise(Native Method)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posixFadviseIfPossible(NativeIO.java:267)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX$CacheManipulator.posixFadviseIfPossible(NativeIO.java:146)
+        at org.apache.hadoop.io.ReadaheadPool$ReadaheadRequestImpl.run(ReadaheadPool.java:206)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+20/12/24 16:15:34 WARN io.ReadaheadPool: Failed readahead on ifile
+EBADF: Bad file descriptor
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posix_fadvise(Native Method)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posixFadviseIfPossible(NativeIO.java:267)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX$CacheManipulator.posixFadviseIfPossible(NativeIO.java:146)
+        at org.apache.hadoop.io.ReadaheadPool$ReadaheadRequestImpl.run(ReadaheadPool.java:206)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+20/12/24 16:15:34 WARN io.ReadaheadPool: Failed readahead on ifile
+EBADF: Bad file descriptor
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posix_fadvise(Native Method)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posixFadviseIfPossible(NativeIO.java:267)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX$CacheManipulator.posixFadviseIfPossible(NativeIO.java:146)
+        at org.apache.hadoop.io.ReadaheadPool$ReadaheadRequestImpl.run(ReadaheadPool.java:206)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+20/12/24 16:15:34 WARN io.ReadaheadPool: Failed readahead on ifile
+EBADF: Bad file descriptor
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posix_fadvise(Native Method)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posixFadviseIfPossible(NativeIO.java:267)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX$CacheManipulator.posixFadviseIfPossible(NativeIO.java:146)
+        at org.apache.hadoop.io.ReadaheadPool$ReadaheadRequestImpl.run(ReadaheadPool.java:206)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+20/12/24 16:15:34 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local533673329_0001_m_000003_0 decomp: 24 le                n: 28 to MEMORY
+20/12/24 16:15:34 WARN io.ReadaheadPool: Failed readahead on ifile
+EBADF: Bad file descriptor
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posix_fadvise(Native Method)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posixFadviseIfPossible(NativeIO.java:267)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX$CacheManipulator.posixFadviseIfPossible(NativeIO.java:146)
+        at org.apache.hadoop.io.ReadaheadPool$ReadaheadRequestImpl.run(ReadaheadPool.java:206)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+20/12/24 16:15:34 INFO reduce.InMemoryMapOutput: Read 24 bytes from map-output for attempt_local533673329_0001_m_000003_0
+20/12/24 16:15:34 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 24, inMemoryMapOutputs.size() -> 14, commitMemory ->                 312, usedMemory ->336
+20/12/24 16:15:34 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local533673329_0001_m_000009_0 decomp: 24 le                n: 28 to MEMORY
+20/12/24 16:15:34 INFO reduce.InMemoryMapOutput: Read 24 bytes from map-output for attempt_local533673329_0001_m_000009_0
+20/12/24 16:15:34 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 24, inMemoryMapOutputs.size() -> 15, commitMemory ->                 336, usedMemory ->360
+20/12/24 16:15:34 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local533673329_0001_m_000010_0 decomp: 24 le                n: 28 to MEMORY
+20/12/24 16:15:34 INFO reduce.InMemoryMapOutput: Read 24 bytes from map-output for attempt_local533673329_0001_m_000010_0
+20/12/24 16:15:34 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 24, inMemoryMapOutputs.size() -> 16, commitMemory ->                 360, usedMemory ->384
+20/12/24 16:15:34 WARN io.ReadaheadPool: Failed readahead on ifile
+EBADF: Bad file descriptor
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posix_fadvise(Native Method)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posixFadviseIfPossible(NativeIO.java:267)
+        at org.apache.hadoop.io.nativeio.NativeIO$POSIX$CacheManipulator.posixFadviseIfPossible(NativeIO.java:146)
+        at org.apache.hadoop.io.ReadaheadPool$ReadaheadRequestImpl.run(ReadaheadPool.java:206)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+20/12/24 16:15:34 INFO reduce.EventFetcher: EventFetcher is interrupted.. Returning
+20/12/24 16:15:34 INFO mapred.LocalJobRunner: 16 / 16 copied.
+20/12/24 16:15:34 INFO reduce.MergeManagerImpl: finalMerge called with 16 in-memory map-outputs and 0 on-disk map-outputs
+20/12/24 16:15:34 INFO mapred.Merger: Merging 16 sorted segments
+20/12/24 16:15:34 INFO mapred.Merger: Down to the last merge-pass, with 16 segments left of total size: 336 bytes
+20/12/24 16:15:34 INFO reduce.MergeManagerImpl: Merged 16 segments, 384 bytes to disk to satisfy reduce memory limit
+20/12/24 16:15:34 INFO reduce.MergeManagerImpl: Merging 1 files, 358 bytes from disk
+20/12/24 16:15:34 INFO reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+20/12/24 16:15:34 INFO mapred.Merger: Merging 1 sorted segments
+20/12/24 16:15:34 INFO mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 351 bytes
+20/12/24 16:15:34 INFO mapred.LocalJobRunner: 16 / 16 copied.
+20/12/24 16:15:34 INFO Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+20/12/24 16:15:34 INFO mapred.Task: Task:attempt_local533673329_0001_r_000000_0 is done. And is in the process of committing
+20/12/24 16:15:34 INFO mapred.LocalJobRunner: 16 / 16 copied.
+20/12/24 16:15:34 INFO mapred.Task: Task attempt_local533673329_0001_r_000000_0 is allowed to commit now
+20/12/24 16:15:34 INFO output.FileOutputCommitter: Saved output of task 'attempt_local533673329_0001_r_000000_0' to hdfs://manager.novalocal:8                020/user/student10_3/QuasiMonteCarlo_1608826528671_1412011718/out/_temporary/0/task_local533673329_0001_r_000000
+20/12/24 16:15:34 INFO mapred.LocalJobRunner: reduce > reduce
+20/12/24 16:15:34 INFO mapred.Task: Task 'attempt_local533673329_0001_r_000000_0' done.
+20/12/24 16:15:34 INFO mapred.LocalJobRunner: Finishing task: attempt_local533673329_0001_r_000000_0
+20/12/24 16:15:34 INFO mapred.LocalJobRunner: reduce task executor complete.
+20/12/24 16:15:34 INFO mapreduce.Job:  map 100% reduce 100%
+20/12/24 16:15:34 INFO mapreduce.Job: Job job_local533673329_0001 completed successfully
+20/12/24 16:15:34 INFO mapreduce.Job: Counters: 35
+        File System Counters
+                FILE: Number of bytes read=5020970
+                FILE: Number of bytes written=10805889
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=17936
+                HDFS: Number of bytes written=32311
+                HDFS: Number of read operations=527
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=309
+        Map-Reduce Framework
+                Map input records=16
+                Map output records=32
+                Map output bytes=288
+                Map output materialized bytes=448
+                Input split bytes=2582
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=2
+                Reduce shuffle bytes=448
+                Reduce input records=32
+                Reduce output records=0
+                Spilled Records=64
+                Shuffled Maps =16
+                Failed Shuffles=0
+                Merged Map outputs=16
+                GC time elapsed (ms)=178
+                Total committed heap usage (bytes)=12749635584
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters
+                Bytes Read=1888
+        File Output Format Counters
+                Bytes Written=97
+Job Finished in 3.402 seconds
+Estimated value of Pi is 3.14159125000000000000
+[student10_3@node4 ~]$ ssh -i rsa_key student10_3@89.208.221.132 -D localhost:1080
+Warning: Identity file rsa_key not accessible: No such file or directory.
+The authenticity of host '89.208.221.132 (89.208.221.132)' can't be established.
+ECDSA key fingerprint is SHA256:lEY5HJ+bKn9KigeqEf6OAm9PRFkkNS9eIubSD3hjvNI.
+ECDSA key fingerprint is MD5:e8:45:53:3f:e1:f2:a3:97:38:8f:07:d8:11:e9:14:bb.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '89.208.221.132' (ECDSA) to the list of known hosts.
+bind: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 1080
+Could not request local forwarding.
+Last login: Thu Dec 24 16:08:50 2020 from 185.136.77.169
+[student10_3@node4 ~]$ ssh student10_3@manager.novalocal -i /student10_3/id_rsa
+Warning: Identity file /student10_3/id_rsa not accessible: No such file or directory.
+The authenticity of host 'manager.novalocal (89.208.221.132)' can't be established.
+ECDSA key fingerprint is SHA256:lEY5HJ+bKn9KigeqEf6OAm9PRFkkNS9eIubSD3hjvNI.
+ECDSA key fingerprint is MD5:e8:45:53:3f:e1:f2:a3:97:38:8f:07:d8:11:e9:14:bb.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'manager.novalocal' (ECDSA) to the list of known hosts.
+Last login: Thu Dec 24 16:36:43 2020 from node4.novalocal
